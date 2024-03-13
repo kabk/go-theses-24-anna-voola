@@ -1,0 +1,587 @@
+@charset "UTF-8";
+
+
+
+/* @FONT FACE (enable the use of 'custom fonts' inside your document) */
+
+/* 
+  You can use 'fontsquirrel' (https://www.fontsquirrel.com) 
+  or 'transfonter' (https://transfonter.org)
+  to generate your own font for the web from .ttf or .oft files 
+*/
+
+@font-face {
+  font-family: 'beckettregular';
+  src: url('../fonts/beckett_-webfont.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cretinoregular';
+  src: url('../fonts/cretino-webfont.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'helvetica_neueregular';
+  src: url('../fonts/helveticaneueroman-webfont.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helvetica_neuemedium';
+  src: url('../fonts/helveticaneuemedium-webfont.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helvetica_neuemedium_italic';
+  src: url('../fonts/helveticaneuemediumitalic-webfont.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helvetica_neueitalic';
+  src: url('../fonts/helveticaneueitalic-webfont.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'grovanaregularrough';
+  src: url('../fonts/grovana-regularrough-webfont.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial Rounded MT';
+  src: url('../fonts/ArialRoundedMTBold.woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'arialroundedmtregular';
+  src: url('../fonts/arial-rounded-mt-regular-webfont.woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+body{
+  padding: 0;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  overflow-x: hidden;
+  counter-reset: sidenote-counter;
+  width:100%;
+  height:100vh;
+  overflow-y:auto;
+}
+
+
+.header {
+  width:100%;
+  height: 100%;
+  position: relative;
+  margin: 0rem;
+  text-align: left;
+  background-color: yellow;
+}
+
+.main-nav{
+  margin:0;
+  font-family:'Arial Rounded MT';
+  z-index: 1000;
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: rgb(115, 115, 115);
+  padding: 10px;
+  transition: transform 0.3s ease; /* Add transition property */
+}
+
+.main-nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transform: translateY(0);
+  transition: transform 0.3s ease; /* Add transition property */
+}
+
+.middle-container{
+  width:50%;
+  margin: 0 25% 0 25%;
+  background-color: aqua;
+}
+
+
+
+.button1{
+  background-color: yellow;
+  position: relative;
+  height: 30px;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  text-decoration:none;
+}
+
+#abstract{
+  font-family: 'Arial Rounded MT';
+  position: relative;
+  background-color:rgb(252, 44, 44);
+  hyphens: auto;
+  height: 100%;
+  line-height: 1.1!important;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left:3%;
+  padding-right:3%;
+  width: 94%;
+  z-index: 2
+}
+
+#abstract > p {
+  font-size: 1.5rem;
+}
+#abstract > h2 {
+  font-size: 2rem;
+}
+
+
+#start {
+  font-family:'Arial Rounded MT';
+  border-top: solid black 2px;
+  hyphens: auto;
+  line-height: 1.2!important;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 50%;
+}
+
+#start > p {
+  font-size: 1.8rem;
+}
+#start > h2 {
+  font-size: 3.6rem;
+}
+
+#start > p+p {
+    text-indent: 2em;
+    margin: 0;
+  }  
+
+#start .image-container-right{ 
+  margin-right: 500px;
+  float:right;
+  width: 50%;
+  margin-left: 32%;
+  position: relative;
+  font-size:1rem;
+  text-align: justify;
+  color: #ef2a30;
+  hyphens: auto;
+  line-height: 130%;
+  padding: 2vW;
+  text-align: right;
+}
+
+.quote{
+  z-index: 1000;
+  background-color: rgb(66, 66, 178);
+  font-size: 1.8rem;
+  color: beige;
+}
+
+
+
+
+
+
+#chapter-1{
+  background-color: lemonchiffon;
+  font-family:'arialroundedmtregular' ;
+  hyphens: auto;
+  line-height: 1.3!important;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+ #chapter-1 > p {
+  font-size: 2rem;
+}
+  
+#chapter-1 > h2 {
+  font-size: 2rem;
+  width: 100%;
+  text-align: left;
+}
+  
+#chapter-1 > p+p {
+   text-indent: 2em;
+   margin: 0;
+}
+
+
+
+#chapter-2{
+  hyphens: auto;
+  line-height: 1.3!important;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 33.33%;
+  margin: 8.33% 0 0 8.33%;
+}
+
+#chapter-2 > p {
+  font-size: 1.2rem;
+}
+
+#chapter-2 > h2 {
+  font-size: 2.4rem;
+  width: 100%;
+  text-align: left;
+  background-color: aquamarine;
+}
+
+#chapter-2 > p+p {
+    text-indent: 2em;
+    margin: 0;
+  }
+ 
+  
+#chapter-3{
+  border-top: solid black 2px;
+  hyphens: auto;
+  line-height: 1.3!important;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0 0 0 50%;
+  width: 33.33%;
+}
+
+#chapter-3 > p {
+  font-size: 1.2rem;
+}
+  
+#chapter-3 > h2 {
+  font-size: 2.4rem;
+  width: 100%;
+  text-align: left;
+  background-color: aquamarine;
+}
+  
+#chapter-3 > p+p {
+  text-indent: 2em;
+  margin: 0;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem; 
+  /* margin: 2rem; */
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: rgb(247, 247, 145);
+}
+
+
+h1{
+  font-family: 'Arial Rounded MT';
+  font-weight: bold;
+  font-size: 7rem;
+  z-index: 1000;
+  padding: 0;
+  display: block;
+  position: relative;
+  text-align: left;
+  Margin:0;
+}
+
+.word1{
+  font-family: 'Arial Rounded MT';
+  color: black;
+  font-size: 5rem;
+  letter-spacing: -3px;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-family: "baskerville-urw", serif;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+h4, h5, h6{
+  /* h4-h5-h6 style */
+}
+
+p{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  
+}
+
+ol, ul{
+  list-style-type: none;
+}
+
+
+hr{
+
+}
+
+
+
+.sidenote-wrapper{
+position: relative;
+}
+
+  
+p > .sidenote-wrapper {
+text-indent: 0;
+}
+  
+.sidenote,
+.marginnote {
+  background-color:red;
+  font-family: 'helvetica_neueregular';
+  clear: right;
+  width: 30%;
+  font-size: 1rem;
+  line-height: 1.3;
+  padding: 1rem;
+  vertical-align: baseline;
+  position: relative;
+  text-align: left;
+  display: inline-block;
+  margin: 0 0 0 100%;
+  }
+
+.sidenote-number {
+  counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after,
+.sidenote:before {
+  position: relative;
+  vertical-align: baseline;
+  color: blue;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  position: relative;
+  font-size: 1rem;
+}
+
+.sidenote-number:after {
+  content: counter(sidenote-counter);
+  font-size: 1.8rem;
+  border: 5px solid #c1c1c1;
+  color: red;
+  background-color: #c1c1c1;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sidenote:before {  
+  content: counter(sidenote-counter) " ";
+  display: inline-flex;
+}
+
+
+input.margin-toggle {
+  display: none;
+}
+
+label.margin-toggle:not(.sidenote-number) {
+  display: none;
+}
+
+
+
+em{
+  font-family:'helvetica_neuemedium_italic';
+  font-style: Italic;
+}
+
+
+
+/* PAGE STYLES */
+
+/* page structure */
+
+
+
+/* navigation */
+ 
+
+.footnote-image {
+  position: relative;
+  left: 0;
+  top: 0;
+  bottom: none;
+  right: none;
+  width: 100%;
+  height: auto;
+  border: solid 3px blue;
+}
+
+.image-container-right {
+  float:left;
+  margin-left:50%;
+  width:100%;
+  text-align: center;
+  display: none;
+
+}
+
+.image-container-right.visible {
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.image-caption {
+  text-align: left;
+  margin-top: 1px;
+  background-color: brown;
+}
+
+/* content */
+
+main{
+  margin:0;
+}
+
+summary{
+  
+}
+
+
+
+
+
+
+/* UTILITY CLASSES */
+
+/* hide desktop mobile etc */
+
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+
+
+
+
+/* WEBSITE MEDIA QUERIES */
+
+/* styles for 'mobile', screen sizes up to 779px, should covers 'mobile' and 'tablet' */
+/* style this one first and then use the subsequent ones in a cascading way (from general to specific) */
+
+@media (max-width: 779px) {
+
+  /* This is for the sidenotes */
+
+  .sidenote-number:after {
+    font-size: 0.7rem;
+  }
+
+  label.margin-toggle:not(.sidenote-number) {
+    display: inline;
+  }
+
+  .sidenote,
+  .marginnote {
+      display: none;
+  }
+
+  .margin-toggle:checked + .sidenote,
+  .margin-toggle:checked + .marginnote {
+      display: block;
+      float: left;
+      font-size: 0.9rem;
+      clear: both;
+      width: 85%;
+      margin: 1rem 2.5%;
+      position: relative;
+  }
+  .desktop-only{
+    display:none;
+  }
+
+  .mobile-only{
+    display:block;
+  }
+
+}
+
+
+
+/* use this query to apply style changes to smaller smartphones sizes (like an iPhone 5S or SE 2016), max size of 339px */
+
+@media (max-width: 339px) {
+
+  /* your overriding css properties here */
+
+}
+
+
+
+/* use this query to apply style changes for 'mobile' screen sizes that are flipped in 'landscape' mode */
+
+@media (max-width: 779px) and (orientation: landscape) {
+
+   /* your overriding css properties here */
+
+}
+
+
+
+/* use this query to apply style for 'small' desktop screens */
+
+@media (min-width: 780px) and (max-width: 992px) {
+
+  /* your overriding css properties here */
+
+}
+
+
