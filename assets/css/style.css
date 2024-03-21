@@ -499,7 +499,6 @@ em{
   margin-bottom: 2rem;
   clear: left;
   vertical-align: baseline;
-
 }
 
 .image-container.visible {
@@ -561,10 +560,122 @@ summary{
     background-color: green;
   }
 
-  #chapter-1, 
+
+  #start {
+    background-color:transparent;
+    border-top: solid black 2px;
+    hyphens: auto;
+    line-height: 1.3!important;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  
+  #start > p {
+    font-size: 0.7rem;
+  }
+  
+  
+  #start > p+p {
+      text-indent: 1.65em;
+      margin: 0;
+    }  
+  
+  
+    .italic{
+      position: relative;
+      color: beige;
+      line-height: 1.35;
+      font-size: 0.7rem;
+      background-color:rgb(114, 173, 166);
+    }
+  
+  
+  #chapter-1
+  {
+    background-color:transparent;
+    hyphens: auto;
+    line-height: 1.35!important;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  
+   #chapter-1 > p {
+    font-size: 0.7rem;
+  }
+    
+    
+  #chapter-1 > p+p {
+     text-indent:1.65em;
+     margin: 0;
+  }
+  
+  
+  
+  #chapter-2{
+    border-top: solid black 2px;
+    hyphens: auto;
+    line-height: 1.2!important;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  
+  #chapter-2 > p {
+    font-size: 0.7rem;
+  }
+  
+  
+  #chapter-2 > p+p {
+      text-indent: 2em;
+      margin: 0;
+    }
+   
+    
+  #chapter-3{
+    font-family:'Arial Rounded MT';
+    border-top: solid black 2px;
+    hyphens: auto;
+    line-height: 1.2!important;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  
+  #chapter-3 > p {
+    font-size: 0.7rem;
+  }
+    
+  
+  #chapter-3 > p+p {
+    text-indent: 2em;
+    margin: 0;
+  }
+  
+  #Conclusion{
+    font-family:'Arial Rounded MT';
+    border-top: solid black 2px;
+    hyphens: auto;
+    background-color:blue;
+    line-height: 1!important;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  
+  #Conclusion > p {
+    font-size: 0.7rem;
+  }
+    
+  
+  #Conclusion > p+p {
+    text-indent: 2em;
+    margin: 0;
+  }
+
+
+
+  /* #chapter-1, 
   #chapter-2
   #chapter-3{
     background-color:blue;
+    
     hyphens: auto;
     line-height: 1!important;
     text-align: justify;
@@ -574,20 +685,17 @@ summary{
   #chapter-1 > p {
     font-size: 0.7rem;
   }
-
-
     
   #chapter-1 > p+p {
     text-indent: 2em;
     margin: 0;
-  }
+  } */
 
   .quote{
     font-family:"plantin", sans-serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 0.7rem;
-    line-height: 1;
+    font-size: 1.5rem;
     color: rgb(0, 0, 0);
     background-color: darkkhaki;
   }
@@ -596,11 +704,11 @@ summary{
   .marginnote {
   text-align: justify;
   text-justify: inter-word;
-  background-color: rgb(120, 2, 2);
+  background-color: rgb(128, 112, 112);
   font-family: 'helvetica_neuemedium';
   clear: right;
-  font-size: 1rem;
-  line-height: 1.2;
+  font-size: 0.7rem;
+  line-height: 1rem;
   /* margin-right: -45%; */
   margin-right: 0;
   float: right;
@@ -608,8 +716,51 @@ summary{
   width: 100%;
   }
 
+  .image-container {
+    float:left;
+    margin-left:0%;
+    width:100%;
+    display: none;
+    margin-bottom: 2rem;
+    clear: left;
+    vertical-align: baseline;
+  }
+
+
+  .sidenote-number:after,
+  .sidenote:before {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: blue;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: antiquewhite;
+  border: transparent;
+  /* margin-right: 0.5rem; */
+  font-size: 1rem;
+}
+
+.sidenote-number:after {
+  content: counter(sidenote-counter);
+  font-size: 1.3rem;
+  border: transparent;
+  background-color: #c1c1c1;
+  color: red;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
   .middle-container{
-    width:90%;
+    width:80%;
     margin: 0 auto;
   }
 
