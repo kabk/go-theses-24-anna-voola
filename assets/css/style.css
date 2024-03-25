@@ -561,13 +561,22 @@ em{
   }
 
   .headline{
-    font-size: 1rem;
-    line-height: 1;
+    font-size: 1.1rem;
+    line-height: 1.4;
     background-color: yellowgreen;
     text-align: left;
   
   }
 
+  #Bibliography{
+    column-count: 2;
+    font-size: 0.65rem;
+    line-height: 0.7rem; 
+    width:98%;
+    margin:0 auto;
+    column-rule: solid 1px black;
+    column-gap: 2vw;
+  }
 
   .button1{
     height: 20px;
@@ -579,6 +588,7 @@ em{
     border:none;
     position: relative;
     z-index: 9;
+    
   }
   
 
@@ -605,8 +615,8 @@ em{
     .italic{
       position: relative;
       color: beige;
-      line-height: 1;
-      font-size: 1rem;
+      line-height: 1.4;
+      font-size: 1.1rem;
       background-color:rgb(114, 173, 166);
     }
   
@@ -621,7 +631,7 @@ em{
   }
   
    #chapter-1 > p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   
     
@@ -635,13 +645,13 @@ em{
   #chapter-2{
     border-top: solid black 2px;
     hyphens: auto;
-    line-height: 1!important;
+    line-height: 1.4!important;
     text-align: justify;
     text-justify: inter-word;
   }
   
   #chapter-2 > p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   
   
@@ -655,13 +665,13 @@ em{
     font-family:'Arial Rounded MT';
     border-top: solid black 2px;
     hyphens: auto;
-    line-height: 1!important;
+    line-height: 1.4!important;
     text-align: justify;
     text-justify: inter-word;
   }
   
   #chapter-3 > p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
     
   
@@ -674,13 +684,13 @@ em{
     font-family:'Arial Rounded MT';
     border-top: solid black 2px;
     hyphens: auto;
-    line-height: 1!important;
+    line-height: 1.4!important;
     text-align: justify;
     text-justify: inter-word;
   }
   
   #Conclusion > p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
     
   
