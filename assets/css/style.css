@@ -167,7 +167,6 @@ a:hover {
   line-height: 1.35;
   color: rgb(0, 0, 0);
   /* background-color: darkkhaki; */
- 
 }
 
 .main-nav{
@@ -181,9 +180,11 @@ a:hover {
   padding: 10px;
   z-index: 1000;
   transition: top 1s ease, bottom 1s ease; /* Add transition property */
-}
+} 
 
-/* .main-nav-jumper {
+
+
+.main-nav-jumper {
   display: none;
   height: 58px;
 }
@@ -194,7 +195,7 @@ a:hover {
   width: 100%;
   z-index: 1000;
   transform: translateY(0);
-} */
+}
 
 .headroom {
   will-change: transform;
@@ -557,7 +558,8 @@ em{
   }
 
   #abstract{
-    background-color: green;
+    background-color: rgb(227, 227, 227);
+    font-size: 1.3rem;
   }
 
   .headline{
@@ -602,7 +604,7 @@ em{
   }
   
   #start > p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   
   
@@ -612,26 +614,26 @@ em{
     }  
   
   
-    .italic{
-      position: relative;
-      color: beige;
-      line-height: 1.4;
-      font-size: 1.1rem;
-      background-color:rgb(114, 173, 166);
-    }
+  .italic{
+    position: relative;
+    color: black;
+    line-height: 1;
+    font-size: 1rem;
+    background-color:rgb(255, 255, 221);
+  }
   
-  
-  #chapter-1
-  {
+
+
+  #chapter-1{
     background-color:transparent;
     hyphens: auto;
-    line-height: 1.4!important;
+    line-height: 1!important;
     text-align: justify;
     text-justify: inter-word;
   }
   
    #chapter-1 > p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   
     
@@ -645,13 +647,13 @@ em{
   #chapter-2{
     border-top: solid black 2px;
     hyphens: auto;
-    line-height: 1.4!important;
+    line-height: 1!important;
     text-align: justify;
     text-justify: inter-word;
   }
   
   #chapter-2 > p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   
   
@@ -665,13 +667,13 @@ em{
     font-family:'Arial Rounded MT';
     border-top: solid black 2px;
     hyphens: auto;
-    line-height: 1.4!important;
+    line-height: 1!important;
     text-align: justify;
     text-justify: inter-word;
   }
   
   #chapter-3 > p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
     
   
@@ -684,13 +686,13 @@ em{
     font-family:'Arial Rounded MT';
     border-top: solid black 2px;
     hyphens: auto;
-    line-height: 1.4!important;
+    line-height: 1!important;
     text-align: justify;
     text-justify: inter-word;
   }
   
   #Conclusion > p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
     
   
@@ -704,9 +706,8 @@ em{
     font-family:"plantin", sans-serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: rgb(0, 0, 0);
-    background-color: darkkhaki;
   }
 
 
@@ -715,11 +716,10 @@ em{
   .marginnote {
   text-align: justify;
   text-justify: inter-word;
-  background-color: rgb(128, 112, 112);
   font-family: 'helvetica_neuemedium';
   clear: right;
-  font-size: 0.65rem;
-  line-height: 0.7rem;
+  font-size: 0.7rem;
+  line-height: 0.8rem;
   margin-right: 0;
   float: right;
   width: 100%;
@@ -743,22 +743,25 @@ em{
   align-items: center;
   justify-content: center;
   text-align: left;
-  color: blue;
-  font-size: 0.65rem;
+  background-color: rgb(241, 89, 34);
+  font-size: 0.7rem;
   border-radius: 50%;
-  width: 14px;
-  height: 14px;
-  background-color: antiquewhite;
+  width: 13px;
+  height: 13px;
+  color: rgb(221, 221, 221);
   border: transparent;
  
 }
+
+
+
 
 .sidenote-number:after {
   content: counter(sidenote-counter);
   font-size: 1rem;
   border: transparent;
-  background-color: #c1c1c1;
-  color: red;
+  background-color: rgb(221, 221, 221);
+  color:rgb(241, 89, 34);
   border-radius: 50%;
   width: 18px;
   height: 18px;
@@ -767,18 +770,16 @@ em{
   justify-content: center;
 }
 
-
-
   .middle-container{
     width:78%;
     margin: 0 auto;
   }
 
-  /* em{
-    font-family:'helvetica_neuemedium_italic';
-    font-style: Italic;
+  .reference.active {
     font-size: 1rem;
-  } */
+    line-height: 1;
+  }
+
 
   
 
