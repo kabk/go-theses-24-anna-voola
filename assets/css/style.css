@@ -93,7 +93,8 @@
   padding: 0;
   /* text-align: left; */
   opacity: 1;
-  background-image:  linear-gradient(#b0b0b0 0.4px, transparent 0.4px), linear-gradient(to right, #b0b0b0 0.4px, rgb(255, 255, 221) 0.4px);
+  background-image:  linear-gradient(#b0b0b0 0.4px, transparent 0.4px), 
+  linear-gradient(to right, #b0b0b0 0.4px, rgb(255, 255, 221) 0.4px);
   background-size: 8px 8px;
 }
 
@@ -166,7 +167,6 @@ a:hover {
   font-size: clamp(0.25rem, 0.25rem + 1.5vw, 2rem);
   line-height: 1.35;
   color: rgb(0, 0, 0);
-  /* background-color: darkkhaki; */
 }
 
 .main-nav{
@@ -183,7 +183,6 @@ a:hover {
 } 
 
 
-
 .main-nav-jumper {
   display: none;
   height: 58px;
@@ -197,7 +196,7 @@ a:hover {
   transform: translateY(0);
 }
 
-.headroom {
+/* .headroom {
   will-change: transform;
   transition: transform 200ms linear;
 }
@@ -216,7 +215,7 @@ a:hover {
   right: 0;
   left: 0;
   top: 0
-}
+} */
 
 
 
@@ -249,34 +248,38 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: center; /* Center content vertically */
+  justify-content: center; 
   background-color: transparent;
   hyphens: auto;
   line-height: 1.1!important;
   text-align: center;
   text-justify: inter-word;
   height: 100vh;
-  width: 100vw; /* Width set to 85% of viewport width */
-  max-width: 100vw; /* Maximum width to ensure it doesn't exceed header */
-  max-height: 100vh; /* Limit height to 90% of viewport height */
-  overflow-y: auto; /* Allow vertical scrolling if content exceeds height */
-  padding: 50px 50px 0 50px; 
-  font-size: 3rem;;
+  width: 100vw; 
+  max-width: 100vw; 
+  max-height: 100vh; 
+  overflow-y: auto; 
+  padding: 50px 50px 0 50px;
+
+  font-size: clamp(1.4rem, 1.4rem + 1.5vw, 2.4rem);
 
 }
   
 .headline{
   font-size: clamp(0.25rem, 0.25rem + 1.5vw, 1.65rem);
   line-height: 1.35;
-  background-color: black;
-  color:rgb(255, 255, 221);
+  color: black;
   text-align: left;
+ 
+}
+
+.list{
+  background-color: rgb(241, 89, 34);
+  text-align: center;
 }
 
 
 #start {
-  background-color:transparent;
-  border-top: solid black 2px;
   hyphens: auto;
   text-align: justify;
   text-justify: inter-word;
@@ -294,13 +297,16 @@ a:hover {
   }  
 
 
-  .italic{
-    position: relative;
-    color:black;
-    font-size: clamp(0.25rem, 0.25rem + 1.5vw, 1.65rem);
-    line-height: 1.35;
-    background-color:rgb(255, 255, 221);
-  }
+.italic{
+  text-align: justify;
+  position: relative;
+  color:rgb(221, 221, 221);
+  font-size: clamp(0.25rem, 0.25rem + 1.5vw, 1.65rem);
+  line-height: 1.35;
+  background-color: rgb(3, 115, 252);
+}
+
+
 
 
 #chapter-1{
@@ -324,7 +330,6 @@ a:hover {
 
 
 #chapter-2{
-  border-top: solid black 2px;
   hyphens: auto;
   line-height: 1.2!important;
   text-align: justify;
@@ -344,7 +349,6 @@ a:hover {
  
   
 #chapter-3{
-  border-top: solid black 2px;
   hyphens: auto;
   text-align: justify;
   text-justify: inter-word;
@@ -362,7 +366,6 @@ a:hover {
 }
 
 #Conclusion{
-  border-top: solid black 2px;
   hyphens: auto;
   text-align: justify;
   text-justify: inter-word;
@@ -404,10 +407,6 @@ p{
 ol, ul{
   list-style-type: none;
 }
-
-
-
-
 
 
 .sidenote-wrapper{
@@ -559,15 +558,20 @@ em{
 
   #abstract{
     background-color: rgb(227, 227, 227);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .headline{
-    font-size: 1.1rem;
-    line-height: 1.4;
-    background-color: yellowgreen;
+    background-color: transparent;
+    color: rgb(241, 89, 34);
+    font-size: 1rem;
+    line-height: 1;
     text-align: left;
   
+  }
+
+  .main-nav{
+    font-size:0.65rem;
   }
 
   #Bibliography{
@@ -592,11 +596,13 @@ em{
     z-index: 9;
     
   }
+
+  a{
+    font-size:0.65rem;
+  }
   
 
   #start {
-    background-color:transparent;
-    border-top: solid black 2px;
     hyphens: auto;
     line-height: 1!important;
     text-align: justify;
@@ -619,7 +625,7 @@ em{
     color: black;
     line-height: 1;
     font-size: 1rem;
-    background-color:rgb(255, 255, 221);
+    background-color: rgb(3, 115, 252);
   }
   
 
@@ -645,8 +651,6 @@ em{
   
   
   #chapter-2{
-    border-top: solid black 2px;
-    hyphens: auto;
     line-height: 1!important;
     text-align: justify;
     text-justify: inter-word;
@@ -664,8 +668,6 @@ em{
    
     
   #chapter-3{
-    font-family:'Arial Rounded MT';
-    border-top: solid black 2px;
     hyphens: auto;
     line-height: 1!important;
     text-align: justify;
@@ -683,8 +685,6 @@ em{
   }
   
   #Conclusion{
-    font-family:'Arial Rounded MT';
-    border-top: solid black 2px;
     hyphens: auto;
     line-height: 1!important;
     text-align: justify;
@@ -714,6 +714,7 @@ em{
 
   .sidenote,
   .marginnote {
+    border-top: solid 1px black;
   text-align: justify;
   text-justify: inter-word;
   font-family: 'helvetica_neuemedium';
