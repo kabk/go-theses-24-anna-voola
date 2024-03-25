@@ -36,6 +36,8 @@
 		<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 		<!-- your function scripts -->
 		<script type="text/javascript" src="assets/js/script.js"></script>
+
+		<script src="path/to/headroom.js"></script>
 		<!-- <script type="text/javascript" src="assets/js/script.js?ver=1.0"></script>
 	     -->
 
@@ -47,24 +49,27 @@
 
 		
 <header class="header">
+
 	
-	<h1>
-		Constrain, Contain, Complain
-	</h1>
+	
+	<span class="headline">
+		CONSTRAIN, CONTAIN, COMPLAIN
+	</span>
 
 
 	<div id="abstract">
 
-		
 	<p>
 	This thesis explores the transformative power of storytelling, using
 	mouldy bread as an analogy to describe the power and entanglement of
 	storytelling. Stories, just alike an airborne fungus in bread,
 	infiltrate the greater narrative of the world, influencing the discourse
-	and shaping perceptions. Focused on the overlooked narratives of the
+	and shaping perceptions. 
+	
+	Focused on the overlooked narratives of the
 	female experience, this thesis challenges the dominance of the white cis
 	male-dominated stories. Further, it explores methods within the realm of
-	literature and fiction, to share experiences by the unwanted and
+	literature and fiction and how to share experiences by the unwanted and
 	suppressed voices through history and society.
 
 
@@ -75,12 +80,11 @@
 	The concept of the evolving archive, similar to the mouldy bread or
 	an unopened Tupperware, challenges conventional perceptions of archives
 	as being rigid and controlled spaces. This thesis proposes a shift
-	towards healing inequalities, emphasizing the importance of embracing
+	towards healing inequalities and emphasizing the importance of embracing
 	diverse stories. Ultimately, storytelling emerges as a dynamic tool for
-	rewriting and detangling the master narrative, to then hopefully become
-	a more inclusive world where every voice contributes to our shared
-	memories and narratives.
+	rewriting and detangling the master narrative.
 	</p>
+
 		
 	</div>
 
@@ -88,7 +92,18 @@
 
 <!-- unicode for arrow. &#x27A5; -->
 
-<nav id="main-nav">
+<nav id="main-nav" class="headroom header--fixed hide-from-print" 
+role="banner">
+    <ul class="main-nav">
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#chapter-1">Chapter 1</a></li>
+      <li><a href="#chapter-2">Chapter 2</a></li>
+      <li><a href="#chapter-3">Chapter 3</a></li>
+      <li><a href="#epilogue">Epilogue</a></li>
+    </ul>
+  </nav>
+
+<!-- <nav id="main-nav">
 	<ul class="main-nav">
 	<li> <a href="#start">INTRO</a></li>
 	<li> <a href="#chapter-1">CHAPTER 1: <br>STORIES FOR DECADES</a></li>
@@ -99,35 +114,18 @@
 </nav>	
 
 <nav class="main-nav-jumper">&nbsp;</nav>
-
+ -->
 
 	
 <div id="start" class="middle-container">
 
 
-<h2>INTRO</h2>
-
-
-
+<span class="headline">INTRO</span>
   
-<div class="image-container" id="image-1">
-    <img class="footnote-image" src="assets/images/Image1.jpeg" alt="Description of the image">
-    <p class="image-caption">
-      The image description
-    </p>
-  </div>
-  
-
 <p>
-I once heard, that if your bread has
-<button class="button1 image-toggle" data-image-id="image-1">mould</button> 
-
-at one spot, you can’t just scrape it — or cut it — away, like you would do with your cheese or
+I once heard, that if your bread has mould at one spot, you can’t just scrape it — or cut it — away, like you would do with your cheese or
 vegetables. You would have to throw the entire loaf of bread away, even
 though the rest of it hasn’t been touched by the mould at all.
-</p>
-
-<p>
 
 	<div class="image-container" id="image-2">
 		<img class="footnote-image" src="assets/images/MOULD_3.jpg" alt="Description of the image">
@@ -135,29 +133,39 @@ though the rest of it hasn’t been touched by the mould at all.
 		  The image description
 		</p>
 	  </div>
-	</p>	  
+
+
+	</p>
+
 <p>
 Since the mould apparently is airborne and bread being rather porous the
 mould would travel incredibly fast through the entire body of the loaf,
-and by the time you notice the fuzzy, green, and white <button class="button1 image-toggle" data-image-id="image-2">spores</button>  in the
-corner of your bread, the microscopic threads of the fungi will already
+and by the time you notice the fuzzy, green, and white spores in the
+corner of your bread, the microscopic <button class="button1 image-toggle" data-image-id="image-1">threads</button> of the fungi will already
 have woven itself into the entire loaf.
+
+
+
+
 <span class="italic">And by now it would be far too late to even
 think about eating a single crumb of the loaf of bread.</span>
 </p>
 
-
-<br/>
-<br/>
-
-<div class="image-container" id="image-3">
-    <img class="footnote-image" src="assets/images/Image2.jpeg" alt="Description of the image">
+<div class="image-container" id="image-1">
+    <img class="footnote-image" src="assets/images/Image1.jpeg" alt="Description of the image">
     <p class="image-caption">
-      The image description
+      Aspergillus mould under microscope.
     </p>
   </div>
+
+
+<br/>
+<br/>
+
+
 <p>
-In many ways I see stories to be just like that <button class="button1 image-toggle" data-image-id="image-3">airborne fungus.</button> 
+In many ways I see stories to be just like that <button class="button1 image-toggle" 
+data-image-id="image-3">airborne fungus.</button> 
 
 As a story is being told, being brought to life, and in some way being
 planted in this world — no matter being the bedtime stories told from the
@@ -165,6 +173,14 @@ side of the bed, or it being incredible literary work about the female
 experience — it immediately infiltrates the greater narrative of the
 world. It travels into the gaps of the untoldness and fills it up with
 new knowledge and perceptions. 
+</p>
+<p>
+<div class="image-container" id="image-3">
+    <img class="footnote-image" src="assets/images/Image2.jpeg" alt="Description of the image">
+    <p class="image-caption">
+      Black Bread mould under microscope.
+    </p>
+  </div>
 </p>
 <p>
 You might not be able to see it, or feel
@@ -186,6 +202,7 @@ This makes it rather impossible to cover every aspect
 of the tool of storytelling and therefore in this thesis, my exploring
 and curiosity stems from an interest in speculative fabulation,
 speculative feminism, science fiction — or just SF, a term I have borrowed from Donna&nbsp;Haraway.
+
 <span class="sidenote-wrapper"> <label for="sn-0"
 	class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0"
 	class="margin-toggle" /><span class="sidenote">Donna J. Haraway is an American professor 
@@ -200,27 +217,28 @@ speculative feminism, science fiction — or just SF, a term I have borrowed fro
 Haraway argues that none of these listed genres can exist without each other 
 and goes on to explain how SF is a way of tracing the threads. To find the
 tangles and patterns, to pass on and to receive, to make and to unmake,
-and to pick up the threads and to drop them again.<span class="citation">(Haraway, <em>Staying
-with the Trouble: Making Kin in the Chthulucene</em>)</span>
+and to pick up the threads and to drop them again. 
+
+<span class="reference-toggle">&#x27A5;</span>
+<span class="reference">(Haraway, <em>Staying
+	with the Trouble: Making Kin in the Chthulucene</em>)</span>
 <br/>
 <br/>
 </p>
 
 <div class="image-container" id="image-4">
-    <img class="footnote-image" src="assets/images/Image3.jpeg" alt="Description of the image">
+    <img class="footnote-image" src="assets/images/judith.jpg" alt="Description of the image">
     <p class="image-caption">
-      The image description
+		<em>Judith slaying Holofernes</em> by Artemisia Gentileschi, 1614–18
     </p>
   </div>
 
   <p>
 The urge and motivation for this theme is to investigate the
-entanglement of narratives — more specific the expression of <button class="button1 image-toggle" data-image-id="image-4">female
-	experiences.</button>   — and to explore what occurs when the threads of stories
+entanglement of narratives — more specific the expression of <button class="button1 image-toggle" data-image-id="image-4">
+female experiences.</button>   — and to explore what occurs when the threads of stories
 interconnects and how this has contributed to the shaping of the world
 we know of&nbsp;today.</p>
-<br/>
-<br/>
 <br/>
 <br/>
 <br/>
@@ -233,9 +251,12 @@ we know of&nbsp;today.</p>
 
 <div id="chapter-1" class="middle-container">
 
-<h2> CHAPTER 1: 
-	 STORIES FOR DECADES:<br/>
-	 A MINI RANT ABOUT INEQUALITY<br/>IN STORYTELLING</h2>
+
+	<span class="headline">CHAPTER 1: 
+	
+		STORIES FOR DECADES:
+		A MINI RANT ABOUT INEQUALITY IN STORYTELLING</span>
+
 				
 <br/>
 <br/>
@@ -244,24 +265,25 @@ we know of&nbsp;today.</p>
 “The feminist utopian novel is a place where theories of power
 can be addressed through the construction of narratives that test and
 stretch the boundaries of power in its operational
-details.”<span class="citation">(Bartkowski, <em>Feminist Utopias,</em> p. 5)</span>
-
+details.”</span> <span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Bartkowski, <em>Feminist Utopias,</em> p. 5)</span>
 </span>
+
 <br />
 <br />
 
 
 It’s not going to be possible to write about the significance of
 storytelling and how it is intertwined with the female experience,
-without mentioning Ursula K. Le Guin and her novel <span class="booktitle">The Carrier Bag
-Theory of Fiction.</span> Le Guin presents the idea that the stories we
+without mentioning Ursula K. Le Guin and her novel <button class="button1 image-toggle" data-image-id="image-6">The Carrier Bag
+Theory of Fiction</button>. Le Guin presents the idea that the stories we
 know of — and have been told numerous of times already — are the stories
 centered around adventures and heroes. Since the stories of prehistoric
 times, we have been fed with the story of the hunter going out on a
 dangerous adventure, defying the extreme weather, for then to come back
-home with the meat of his prey — and he will then be the man who survived
-to tell the story. Le Guin refers to it as <span class="terms">The Killer Story</span>
-
+home with the meat of his prey — and him to then become the man who survived
+to tell the story. Le Guin refers this phenomenon as <em>The Killer Story</em>
+  
 <span class="sidenote-wrapper"> <label for="sn-1"
 	class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1"
 	class="margin-toggle" /><span class="sidenote">The term ‘The Killer Story’ is used by Ursula K. Le Guin referring to 
@@ -272,10 +294,20 @@ to tell the story. Le Guin refers to it as <span class="terms">The Killer Story<
 </span>
 
 and more importantly goes on to say
-<span class="quote">“It isn’t their story. It’s his”. </span><span class="citation">(Le Guin et al. <em>The Carrier
-Bag of Fiction,</em> p. 28)</span>
+<span class="quote">“It isn’t their story. It’s his”.</span>
+
+
+<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Le Guin et al. <em>The Carrier
+	Bag of Fiction,</em> p. 28)</span>
 </p>
 
+<div class="image-container" id="image-6">
+    <img class="footnote-image" src="assets/images/BOOK.jpg" alt="Description of the image">
+    <p class="image-caption">
+      <em>The Carrier Bag Theory of Fiction</em> by Ursula K. Le Guin.
+    </p>
+  </div>
 
 
 <p> 
@@ -283,16 +315,18 @@ The prehistoric human didn’t survive from hunting, but rather
 gathering, and in the end, the hunting was no necessity. But collecting
 oats and grains is harder to make interesting and probably less
 thrilling than listening to the tale of taking down a mammoth. This
-doesn’t mean that stories of the collector are any less important — far
-from. 
+doesn’t mean that stories of the collector are any less important — far from. 
 </p>
+<p> 
 <div class="image-container" id="image-5">
     <img class="footnote-image" src="assets/images/weapon.png" alt="Description of the image">
     <p class="image-caption">
-      The image description
+      How to use a throwing spear.
     </p>
   </div>
-  <p> 
+</p>
+
+<p> 
 Le Guin argues that what we know, from this way of living, has taught us that the 
 first manmade tool wasn’t a <button class="button1 image-toggle" data-image-id="image-5">deathly weapon</button>, 
 but a container to collect and&nbsp;contain.
@@ -304,11 +338,14 @@ but a container to collect and&nbsp;contain.
 A container — a tool that can carry everything and be anything; from a
 womb carrying a child, to the woven basked storing the food that has
 been collected, to the novelle that holds the story, that then carries
-the words. To the words carrying knowledge.<span class="citation">(Ibid)</span> 
+the words. To the words carrying knowledge.
+<span class="reference-toggle">&#x27A5;</span>
+<span class="reference">(Ibid.)</span>
+
 Words works like microorganisms — when they get planted the threads of them interconnects
 with each other, and by then starts to communicate and create kinship
 through patterns and entanglements in the greater narrative.
-<span class="italic">And never have I never thought that I would find my Tupperware
+<span class="italic">And never have I ever thought that I would find my Tupperware
 
 	
 so poetic; look at me gazing at
@@ -327,15 +364,15 @@ step is to enjoy and value the tool of the Tupperware?
 
 <p>
 On the other hand, the stories that have no heroes, but are filled up
-with real people, is by Le Guin being referred to as <span class="terms">The Life
-Story</span>
+with real people, is by Le Guin being referred to as <em>The Life
+Story</em>
 
 <span class="sidenote-wrapper"> <label for="sn-2"
 	class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2"
 	class="margin-toggle" /><span class="sidenote">Term used by Ursula K. Le Guin, referring to the stories that are filled with real 
 		people, rather than focusing on the hero or savior. 
 		Also argued that a novelle is a Life Story.
-		<br />
+
 	</span>
 </span>
 
@@ -363,9 +400,12 @@ at all…”
 <br />
 
 “…That’s right, they said. What you are is a woman.”
-
-<span class="citation">(Ibid., p. 30-32)</span>
 </span>
+<span class="reference-toggle">&#x27A5;</span>
+<span class="reference">(Ibid., p. 30-32)</span>
+
+
+
 
 <br />
 <br />
@@ -392,9 +432,9 @@ weapons and saving the day with the meat of their prey to feast on. I’m not sa
 you are a supporter of the patriarchy<span class="sidenote-wrapper"> <label for="sn-2"
 	class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2"
 	class="margin-toggle" /><span class="sidenote">Patriarchy is a social system where men are the authority. 
-		This idea stems from the domestic ida of men being the tuler of the house and family, but has expanded and
-		are present in are very present in contemporary society. The term has often been used by second-wave feminist 
-		and has been defined as "a system of social structures and practices in which men dominate, oppress, adn exploit women."
+		This idea stems from the domestic ida of men being the ruler of the house and family, but has expanded and
+		are very present in contemporary society and how it is structured. The term has often been used by Second-wave feminists
+		and has been defined as "a system of social structures and practices in which men dominate, oppress, and exploit women."
 		<br />
 		(Walby, Sylvia (1989). "Theorising Patriarchy")
 	</span>
@@ -408,8 +448,9 @@ basket makers either.
 To make an emphasis on the male-controlled — and navigated — narrative, I’m
 going to stay with the discourse of prehistoric times. It is said that
 the oldest find of cave art, mainly consist of depictions of the female
-sexual organ and various preys.<span class="citation">(Viegas, "Female Sex Organs the Focus of
-the Oldest Known Cave Art")</span> Professor R. Dale Guthrie speculates that
+sexual organ and various preys.<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Viegas, "Female Sex Organs the Focus of
+	the Oldest Known Cave Art")</span> Professor R. Dale Guthrie speculates that
 cave art is a more personal outlet, and less about rituals or collective
 moments, that some professionals have suggested in other theories. Cave
 art is also believed to primarily be made by young men. Young men who
@@ -417,8 +458,11 @@ experienced an increase in thoughts of their upcoming adult life,
 combined with some curiosity, which apparently — and not hard to imagine
 when you think about the stereotypical gender roles — led them to have
 nothing else on their mind than sex and hunting and suddenly the cave
-art turned into a <span class="quote">“…Paleolithic playboy magazine”.</span><span class="citation">(Gray, "Cave
-Art and the Evolution of the Human Mind", p. 62)</span>
+art turned into a <span class="quote">“…Paleolithic playboy magazine”.</span>
+	<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Gray, "Cave
+	Art and the Evolution of the Human Mind", p. 62)</span>
+
 <br />
 <br />
 
@@ -431,8 +475,6 @@ Even prehistoric times prove to tap into the male gaze
 		objectified. And for men to believe that the female body and mind is something to possess and conquer 
 		for them to become successful. 
 		Term is mostly used in the realm of visual arts and literature and is strongly related to the patriarchy. 
-		
-		<br />
 	</span>
 </span>
 
@@ -472,9 +514,10 @@ And further on the perception, that the tool of stories and myths should
 only concern Gods and heroes, due to the idea that people need
 aspiration and a form of image to the perfect. By having this they would
 have a clear vision on what was thought on to be the ideal man, the
-hero, which then can be imitated.<span class="citation">(Durec, <em>Shaping Imaginations:
-Plato's Republic on Stories and Storytelling</em>)</span> So you might not like
-the fascist approach of controlling the narrative, but it’s another
+hero, which then can be imitated.<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Durec, <em>Shaping Imaginations:
+	Plato's Republic on Stories and Storytelling</em>)</span> 
+So you might not like the fascist approach of controlling the narrative, but it’s another
 argument, why storytelling is such a powerful tool.
 </p>
 <p>
@@ -484,8 +527,10 @@ retelling of the past or read about it in found books. With the
 development of how society are structured today, especially with all the
 medias, storytelling is way more diversified, and stories are mediated
 through everything from bedtime stories, images (still and moving),
-activism, to even social platforms.<span class="citation">(Sontag and Berger, <em>To Tell a
-Story</em>)</span> Stories are not universal in the sense, that we alle share the
+activism, to even social platforms.<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Sontag and Berger, <em>To Tell a
+	Story</em>)</span> 
+Stories are not universal in the sense, that we alle share the
 same story or perception of the story. Our perception are shaped by our
 individual experiences, which is why we never will reach a perfect common
 ground on how we read and understand the world — or the master narrative.
@@ -499,9 +544,10 @@ say.
 <br />
 According to Aristotle a narrative connects events, it doesn’t matter if
 the narrative follows a classic pattern of beginning, middle, ending or
-being non-linear — a narrative will always resemble a journey.<span class="citation">
-(Le Guin, <em>Dancing at the Edge of the World: Thoughts on Words, Women,
-Places</em>)</span> Stories, especially the ones that stems from oral
+being non-linear — a narrative will always resemble a journey.<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Le Guin, <em>Dancing at the Edge of the World: Thoughts on Words, Women,
+	Places</em>)</span> 
+ Stories, especially the ones that stems from oral
 tradition, are peoples own description of themselves and their way of
 facing life. These descriptions often differ from descriptions made by
 professionals such as sociologists, scientists, or
@@ -515,24 +561,32 @@ life, should have a more truthful image of another person and their
 culture.(Bronner, "Folklore as a Mirror of Culture") That idea becomes
 more and more absurd the more you think about it, due to the gap there
 is between reality and perception, a gap that allows interfering and
-creates room for change.<span class="citation">(Tiffee, "Mind the Gap Between Perception and
-Reality")</span> 
+creates room for change. <span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Tiffee, "Mind the Gap Between Perception and
+	Reality")</span> 
+
+
 <br />
 <br />
+
 The question is now; how can the story be rewritten? How to detangle the
 master narrative, for then to weave in new and unheard voices that didn’t
 get the change to affect the narrative in the past.
 </p>
-
 <br />
 <br />
 <br />
+<br/>
+<br/>
 <br />
 </div>
 
 
 <div id="chapter-2" class="middle-container">	
-<h2>CHAPTER 2: TO MINE THE GAPS</h2>
+
+	<span class="headline"> 
+		CHAPTER 2: TO MINE THE GAPS</span>
+
 
 <br />
 <br />
@@ -540,11 +594,10 @@ get the change to affect the narrative in the past.
 <p>
 <span class="quote">“To assume the tendentious voice of utopian projections takes a
 certain amount of confidence and sense of power to imagine collective
-change.”</em><span class="citation">(Bartkowski, <em>Feminist Utopias,</em> p. 9)
-</span>
-</span>
-<br />
-<br />
+change.”</em> </span><span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Bartkowski, <em>Feminist Utopias,</em> p. 9)</span> 
+
+
 <br />
 <br />
 
@@ -599,9 +652,11 @@ this time, is the Anthropocene.
 	</span>
 </span>
 
-<span class="citation">(Haraway, "Tentacular
-Thinking: Anthropocene, Capitalocene, Chthulucene")</span> The term mainly
-refers to climate and environmental changes that — due to human impact — are
+<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Haraway, "Tentacular
+	Thinking: Anthropocene, Capitalocene, Chthulucene")</span> 
+
+The term mainly refers to climate and environmental changes that — due to human impact — are
 way pass irreversible. It has this doomsday notion and suddenly I’m
 thinking the rhetoric about this epoch is why it feels like we are
 getting closer to the end. If the world ended right now it would be
@@ -609,7 +664,10 @@ incredibly sad, for many reasons, one being that the narrative still is
 dominated by <span class="terms">The Killer Story</span> and there would be no time to
 heal the past or change the future. <span class="quote">“There are so many good stories
 yet to tell, so many netbags yet to string, and not just by human
-beings.”</span><span class="citation">(Ibid.)</span></p>
+beings.”</span>
+
+<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Ibid.)</span> 
 
 <p>However, in more recent times the term Capitalocene
 	
@@ -642,7 +700,10 @@ story.</em><br />
 <em>(2) Species Man does not make history.</em><br />
 <br />
 <em>(3) Man plus Tool does not make history. That is the story of
-History human exceptionalists tell.”</em>(Ibid.)</p>
+History human exceptionalists tell.”</em>
+<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Ibid.)</span> 
+</p>
 
 </blockquote>
 
@@ -655,8 +716,7 @@ in an airtight&nbsp;Tupperware
 	class="margin-toggle" /><span class="sidenote">Tupperware is an American brand that manufactures plastic containers. 
 		The company was founded in 1942 by Earl Tupper.  
 	</span>
-</span>
-, contained, and for way too long.
+</span>, contained, and for way too long.
 Placed in the back of the fridge and now, no one dares to open it
 anymore. Too terrified to be hit in the face with a pungent smell that
 triggers something uncomfortable — and why put yourself in that situation?
@@ -670,31 +730,48 @@ before.
 The author Saidiya Hartman refers to the notion of opening the lid,
 or mining the gap, as critical fabulation. A term that describes a
 creative method of combining history with fiction, and to explore the
-narrative that already took place.<span class="citation">(Okeowo, "How Saidiya Hartman Retells
-the History of Black Life")</span> Hartman’s essay <span class="booktitle">Venus in Two Acts</span>
+narrative that already took place.<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Okeowo, "How Saidiya Hartman Retells
+	the History of Black Life")</span> 
+
+Hartman’s essay <em>Venus in Two Acts</em>
 is a story of two enslaved black girls. The fragments that Hartman uses
 are from the archive of Atlantic slavery which consists of no more than
 legal documents, protocols and account books stating their death and
-identifying them as nothing more than numbers.<span class="citation">(Hartman, "Venus in Two
-Acts")</span> When Hartman starts to read the archives, she opens the lid of
+identifying them as nothing more than numbers.
+
+<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Hartman, "Venus in Two
+	Acts")</span> 
+ When Hartman starts to read the archives, she opens the lid of
 the container, and by doing so being faced with the position of the
 archive, institutionalised, powerful and by that being the curator of
 the knowledge of the past. Due to this notion Hartman was urged to write
 a counter-story, a story that empowered the unheard voices in the
-narrative. In this case, the story of the two enslaved girls.<span class="citation">(Ibid.)</span> 
+narrative. In this case, the story of the two enslaved girls.
+<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Ibid.)</span> 
+
+
 But how do we place ourselves in the act of telling other people’s
 stories?</p>
 
 
 <p>Hartman herself questions <span class="quote">“How can narrative embody life in words
-and at the same time respect what we cannot know?”.</span><span class="citation">(Ibid. p. 14)</span>
-She also poses the indication that the fiction and writing from her, is
+and at the same time respect what we cannot know?”.</span>
+<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Ibid. p. 14)</span> 
+
+She also poses the indication, that the fiction and writing from her, is
 not about filling in the gaps and create a new master narrative. But
 rather to create a fuller picture of the life of the girls, to focus on
 <em>The Life Story</em> and not to make an uplifting heroine story about
 slavery, but to make sure that words from a slave holds the same value
-in the greater narrative, as a scholarly philosopher.<span class="citation">(Okeowo, "How
-saidiya Hartman Retells the History of Black Life")</span>
+in the greater narrative, as a scholarly philosopher.
+</span>
+<span class="reference-toggle">&#x27A5;</span>
+<span class="reference">(Okeowo, "How
+	saidiya Hartman Retells the History of Black Life")</span> 
 
 <br />
 <br />
@@ -708,8 +785,12 @@ of the story. To practice this act, you will need an archive.
 
 The traditional concept of an archive is explained by Jacques Derrida
 to be rooted in the Greek antiquity and had close connection with the
-power and politics of the community.<span class="citation">(Derrida and Prenowitz, "Archive
-Fever: A Freudian Impression")</span> This concept, is to this day still the
+power and politics of the community.
+<span class="reference-toggle">&#x27A5;</span>
+<span class="reference">(Derrida and Prenowitz, "Archive
+	Fever: A Freudian Impression")</span> 
+
+This concept, is to this day still the
 building blocks of the traditional archives
 
 <span class="sidenote-wrapper"> <label for="sn-7"
@@ -731,7 +812,8 @@ material and the inclusivity of it.
 Further on Derrida opens to the
 complexity of the physical space of the archive, and how this has
 evolved simultaneously with the development of society and
-technology.<span class="citation">(Ibid.)</span>
+technology.<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Ibid.)</span> 
 
 <br />
 <br />
@@ -747,28 +829,32 @@ Tupperware?
 <br />
 <br />
 <br />
+<br />
+<br />
 				
 </div>	
 
 <div id="chapter-3" class="middle-container">	
 
-<h2>CHAPTER 3: THE GYNOCENE AND ALL THE WOMEN I'M SUPPOSED TO BE</h2>
-<br />
-<br />
+<span class="headline">CHAPTER 3: THE GYNOCENE AND ALL THE WOMEN I'M SUPPOSED TO BE</span>
+
 <br />
 <br />
 <p>
 <span class="italic">My personal archive, my container, my Tupperware, is filled with my
 personal experiences. It contains conversations, relations, movies,
-images, travels, objects, smells, music — the list could go on and on.
+images, travels, objects, smells, music... The list could go on.
 Some might refer to this as a collection of memories. I see them more as
-ingredients. My archive doesn’t have a system, everything gets thrown
+ingredients. 
+<br />
+<br />
+My archive doesn’t have a system, everything gets thrown
 into the same container with no compartments, just one big space where
 everything sloshes around and tangles up — growing in and out of each
 other, creating kinship. Every now and then I open the container, just
 to give it some oxygen to feed upon, but I never let it out — it could
 accidentally get out of control — so I constrain myself and let the
-collection of experiences ferment in peace. 
+collection of experiences ferment in&nbsp;peace. 
 <br />
 <br />
 And why you might
@@ -780,15 +866,16 @@ think?</span>
 Joanna Russ once wrote a letter to feminist literary historian and
 anthologist Susan H. Koppelman, questioning and critiquing another
 feminist <span class="quote">“Where is her anger? I think from now on, I will not trust
-anyone who isn’t angry.”</span><span class="citation">(Russ, <em>To Write Like a Woman: Essays in
-Feminism and Science Fiction</em>)</span>
-
+anyone who isn’t angry.”</span> <span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Russ, <em>To Write Like a Woman: Essays in
+	Feminism and Science Fiction</em>)</span> 
 </p>
-
 <p>
 Female authors have for many years been suppressed in the field of
-writing.<span class="citation">(Russ, <em>How to Suppress Women’s Writing</em>)</span> — well in
-general, the female experience has been expressed through all kinds of
+writing.
+<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Russ, <em>How to Suppress Women’s Writing</em>)</span> 
+— well in general, the female experience has been expressed through all kinds of
 media as being rather difficult — returning to history, the female
 experience have been automatically devaluated and considered to be more
 narrow than the male experience, the master narrative has been to be
@@ -807,16 +894,20 @@ absorbed by men and their God/hero complex
 this notion <span class="quote">"…allows men to not experience female suffering as
 representative of human — and therefore male — suffering. Female
 suffering is… less pertinent, less significant, less threatening than
-the pain which befalls men.”</span><span class="citation">(Chesler, <em>About Men</em>, p. 205)</span>
+the pain which befalls men.”</span><span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Chesler, <em>About Men</em>, p. 205)</span> 
+
 <br />
 <br />
+
 Joanna Russ, mostly known for her writings in the genre of science
 fiction, has written a (novelle) where she with sarcasm — and deeply
 rooted anger and frustration — maps out a tool of analytics to acknowledge
 the patterns of suppression, in the field of writing. The cover of the
 book is plastered with quotes that all begins with <span class="quote">“She wrote it,
-but…”</span><span class="citation">(Russ, <em>How to Suppress Women’s Writing</em>)</span> which could suggest that
-Russ is only referring to the writing by women. This is not the case, Russ' tool is about equality.
+but…”</span> <span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Russ, <em>How to Suppress Women’s Writing</em>)</span> which could suggest that
+Russ is only referring to the writing by women. Though, this is not the case, Russ' tool is about equality.
 <br />
 <br />
 In the prologue Russ makes use of the tools of SF
@@ -833,8 +924,8 @@ and writes about the Glotologs
 <span class="sidenote-wrapper"> <label for="sn-10"
 	class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-10"
 	class="margin-toggle" /><span class="sidenote">
-		White cis men.
-	  </span>
+		A SF tool. Glotologs are here used to name the dominant and controlling individuals
+		of the history in arts. Here is meant white cis men. </span>
 	</span>
 
 — being an intergalactic
@@ -843,15 +934,16 @@ groups away from the art <span class="quote">“In normally egalitarian society 
 situation (socially speaking) is one in which the members of the ‘wrong’
 groups have the freedom to engage in literature (or equally significant
 activities) and yet do not do so, thus proving that they can’t.”</span>
-<span class="citation">(Russ, <em>How to Suppress Women’s Writing,</em> p. 4)</span>
+	<span class="reference-toggle">&nbsp;&#x27A5;</span>
+	<span class="reference">(Ibid. p. 4)</span>
 </p>
 
 <p>
 The tools of Russ’ analytic toolkit can also be applied to other
 forms of arts than just writing, and with the power of storytelling
 being incredible diversified, it seems fitting to look into how
-storytelling has been used in other ways. A great axample could be in activism
-where the fight is often between a them and us. It is important to understand your toolkit and what
+storytelling has been used as a tool other than fiction. A great axample could be in activism.
+Where the fight is often between a them and us. It is important to understand your toolkit and what
 the power of the tools can be utilised to your own benefit. By asking yourself; who
 do you want to listen to you? This can become the difference between
 success and failure to get your message through or not.
@@ -860,7 +952,7 @@ success and failure to get your message through or not.
 
 
 Guerilla Girls
-<span class="sidenote-wrapper"> <label for="sn-10"
+<span class="sidenote-wrapper"> <label for="sn-11"
 	class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-10"
 	class="margin-toggle" /><span class="sidenote">
 		White cis men.
@@ -873,11 +965,15 @@ fiction. As an example, their decision to use physical gorilla masks,
 which does not only provide them privacy, but helps them to emphasise
 the issue of their activism, instead of focusing on their personal
 character. But also, the mask, provides a humoristic aspect to their
-campaigning, that involves people more.<span class="citation">(Chadwick and Guerrilla Girls,
-<em>Confessions of the Guerrilla Girls</em>)</span> This also suggest that
-humour is being used as a tool to get rid of the (at the time) notion
+campaigning, that involves people more.<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Chadwick and Guerrilla Girls,
+	<em>Confessions of the Guerrilla Girls</em>)</span>
+
+
+This also suggest that humour is being used as a tool to get rid of the (at the time) notion
 that feminists didn’t have any sense of fun and being a rather stuck up
-group of people. 
+group of people.
+</p>
 <p>
 
 
@@ -886,7 +982,9 @@ gesture, it can be interpreted in so many ways, Guerilla Girls
 themselves have stated, that it also made them step into a line of,
 traditionally male and masked heroes, such as Robin, Batman and
 Spiderman. In their own words this helped them gain some sort of
-<span class="quote">“mask-ulinity.”</span><span class="citation">(Ibid. p. 15)</span>
+<span class="quote">“mask-ulinity.”</span><span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Ibid. p. 15)</span>
+
 </br>
 </br>
 And yet again we are witnessing the unwanted voices of our society to
@@ -897,23 +995,45 @@ resistant attitude and an expectation of a sincere and praised
 thank you. <span class="italic">I’m like a scoby, a Vinegar Mother, feed me with oxygen and
 sugar to keep me alive. I will only take the room you offer. My
 experience are the ingredients that nurtures me and make sure I grow — and
-the world is my container. But what you don’t know, is what happens if
+the world is my container. 
+</br>
+</br>
+But what you don’t know, is what happens if
 you don’t take care of me. If you forget about me and keep me contained
-in the dark for too long, the process of turning sugar into anger will
-start. A chemical process that can’t be stopped and the longer you wait
+in the dark for too long.
+</br>
+</br>
+The process of turning sugar into anger will begin.
+</br>
+</br>
+A chemical process that can’t be stopped, and the longer you wait
 to check up on me, the more my anger will ferment. Like gas, it will
 infiltrate every memory and experience, becoming paramount and if you
-ever decide to open the lid, I will for sure explode.</span>
+ever decide to open the lid — I will for sure explode.</span>
 </br>
 </br>
 Hopefully we are looking into another epoch, even just for the sake of the
 changes that comes with it. I just read an essay that suggests that the
-next era in time should be named the Gynocene.(Van Der Bly, "Welcome to
-the Gynocene") A suggestion that refers to the inequality between
+next era in time should be named the Gynocene.<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Van Der Bly, "Welcome to
+	the Gynocene")</span> A suggestion that refers to the inequality between
 genders and how the all the epochs we have lived so far, have been
-shaped by male figures — Glotologs — or just <span class="italic">them.</span> Martha Van Der Bly suggests that
-the earth can’t be healed unless the inequality between male and
-unwanted voices are healed.<span class="citation">(Ibid.)</span>
+shaped by male figures — Glotologs — or just <em>them.</em> Martha Van Der Bly
+
+<span class="sidenote-wrapper"> <label for="sn-8"
+	class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-8"
+	class="margin-toggle" /><span class="sidenote">Martha Van Der Bly is a sociologist 
+		specializing in globalization, world society, and national identity. 
+		She is exploring the themes of global solidarity and an imagination of possible 
+		pathways towards peaceful relations. 
+
+		(https://greattransition.org)
+		<br />
+	</span>
+</span>  
+suggests that the earth can’t be healed unless the inequality between male and
+unwanted voices are healed.<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Ibid.)</span>
 
 <br />
 <br />
@@ -922,16 +1042,18 @@ But how to do so, and how can stories contribute to the healing of this
 inequality? Le Guin refers to the power of language and how we in school
 are taught the language spoken by white men — also referred to as father
 tongue. It is a useful language that communicates power and knowledge,
-but also spoken from above with no answer expected “White man speak
-dichotomy”(Ursula K. Le Guin, Bryn Mawr Commencement Address) and
-creates the gaps, this language decides what is right and what is wrong
+but also spoken from above with no answer expected <span class="quote">"White man speak
+dichotomy”</span> <span class="reference-toggle">&#x27A5;</span>
+<span class="reference">(Ursula K. Le Guin, Bryn Mawr Commencement Address)</span> 
+and creates the gaps, this language decides what is right and what is wrong
 and emphasise the notion of <em>us</em> and <em>them.</em> On the other
 hand, there is mother tongue, the language of connection, relations and
 emotions, the language that goes two ways while entangling itself in the
 web of sharing and listening. Mother tongue is the language that stories
 are spoken in, and offers experiences as being the truth. Le Guin
 continues and emphasises the importance of understanding the power of
-both the languages(Ibid.), by understanding how to make use of both the
+both the languages<span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Ibid.)</span>, by understanding how to make use of both the
 tongues, the gap of inequality might slowly start to close up. It’s like
 an alchemical marriage between the sun and the moon as soon as they
 become a union the balance will be restored — or at least that the
@@ -948,19 +1070,27 @@ Didion describes writing as an act of saying I, to share experience and
 invade the reader’s most intimate space. <span class="quote">“In many ways, writing is
 the act of saying I, of imposing oneself upon other people, of
 saying  listen to me, see it my way, change your mind. It’s an
-aggressive, even a hostile act.”</span><span class="citation">(Didion, "Why I Write”)</span> And with
-this amazing quote I’m going to stop the invasion of your intimate
+aggressive, even a hostile act.”</span><span class="reference-toggle">&nbsp;&#x27A5;</span>
+<span class="reference">(Didion, "Why I Write”)</span>
+
+And with this amazing quote I’m going to stop the invasion of your intimate
 space, give you a rest and some space to breath and reflect on how your
 story fits into the master narrative of the world.
 
 </p>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 </div>
 
 
 <div id="Conclusion" class="middle-container">	
 
-<h2>TO TANGLE IT UP</h2>	
+<span class="headline">TO TANGLE IT UP AGAIN</span>	
 
 <p>
 The analogy of mould in a loaf of bread captures the nature of
@@ -996,7 +1126,7 @@ of feminist being up tight.
 <br />
 
 As we entangle ourselves into the speculative realm, contemplating the
-next epoch as suggested by Martha Van Der Bly–the Gynocene–a era where
+next epoch as suggested by Martha Van Der Bly – the Gynocene – a era where
 women, shapeshifters, and other unwanted voices are not only living in
 the world made by men, but are a part of creating the world. The
 suggestion is that the Earth can only heal when the inequality between
@@ -1017,63 +1147,97 @@ angle, maps out the use of storytelling, language and novelle and how I
 since the beginning of human life, have been used to shape the
 world.</p>	
 
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
 </div>
 
 
-<div id="Bibliography">	
-<h2 id="bibliography">BIBLIOGRAPHY</h2>
+
+<div id="Bibliography" >	
+
+
+	<span class="headline">BIBLIOGRAPHY</span>
+
+<span class="biblo">
 
 <p>Amelia Soth. “That Time a Woman Rode Aristotle Around Like a Horse.”
 <em>JStor Daily</em>, 2018,
 https://daily.jstor.org/that-time-a-woman-rode-aristotle-around-like-a-horse/.</p>
+<br />
 <p>Bartkowski, Frances. <em>Feminist Utopias</em>. University of
 Nebraska Press, 1989.</p>
+<br />
 <p>Chadwick, Whitney, and Guerrilla Girls, editors. <em>Confessions of
 the Guerrilla Girls: By the Guerrilla Girls (Whoever They Really Are) ;
 with an Essay by Whitney Chadwick</em>. First ed, HarperPerennial,
 1995.</p>
+<br />
 <p>Chesler, Phyllis. <em>About Men</em>. Reprint, orig. Publ.: New York,
 Simon and Schuster, 1978, Harcourt Brace Jovanovich, 1989.</p>
+<br />
 <p>Gray, Martin Paul. <em>Cave Art and the Evolution of the Human
 Mind</em>. 2010. Victoria University of Wellington.</p>
+<br />
 <p>Haraway, Donna. “Tentacular Thinking: Anthropocene, Capitalocene,
 Chthulucene.” <em>E-Flux</em>, no. 75, Sept. 2016.</p>
+<br />
 <p>Haraway, Donna Jeanne. <em>Staying with the Trouble: Making Kin in
 the Chthulucene</em>. Duke University Press, 2016.</p>
+<br />
 <p>Hartman, Saidiya. “Venus in Two Acts.” <em>Small Axe</em>, vol. Vol.
 12 no 2, no. 26, 2008, pp. 1–14.</p>
+<br />
 <p>J. Bronner, Simon. “Folklore as a Mirror of Culture.” <em>Meaning of
 Folklore: The Analytical Essays of Alan Dundes</em>, 2007,
 pp. 53–66.</p>
+<br />
 <p>Jacques Derrida and Eric Prenowitz. “Archive Fever: A Freudian
 Impression.” <em>Diacritics</em>, vol. 25, no. No. 2, 1995,
 pp. 9–63.</p>
+<br />
 <p>Joan Didion. “Why I Write.” <em>New York Times Book Review</em>,
 1976, p. 270. The New York Times Archive.</p>
+<br />
 <p>Le Guin, Ursula K. <em>Dancing at the Edge of the World: Thoughts on
 Words, Women, Places</em>. Grove Press, 1989.</p>
-<p>---. <em>The Carrier Bag Theory of Fiction</em>. Ignota, 2019.</p>
+<br />
+<p>Le Guin, Ursula K.<em>The Carrier Bag Theory of Fiction</em>. Ignota, 2019.</p>
+<br />
 <p>Martha Van Der Bly. <em>Welcome to the Gynocene</em>.
 https://greattransition.org/gti-forum/anthropocene-van-der-bly.</p>
+<br />
 <p>Okeowo, Alexis. “How Saidiya Hartman Retells the History of Black
 Life.” <em>The New Yorker</em>, Oct. 2020.</p>
+<br />
 <p>Russ, Joanna. <em>How to Suppress Women’s Writing</em>. Reprinted,
 Women’s Press, 1994.</p>
-<p>---. <em>To Write Like a Woman: Essays in Feminism and Science
+<br />
+<p>Russ, Joanna.<em>To Write Like a Woman: Essays in Feminism and Science
 Fiction</em>. Indiana University Press, 1995.</p>
+<br />
 <p>Sontag, Susan, and John Berger. <em>To Tell a Story</em>. 1983,
 https://www.youtube.com/watch?v=MoHCR8nshe8&amp;t=2170s.</p>
+<br />
 <p>Tiffee, Sean. <em>Mind the Gap Between Perception and Reality</em>.
 https://www.youtube.com/watch?v=8BL9uRJpTqY&amp;t=58s.</p>
+<br />
 <p>Ursula K. Le Guin. <em>Bryn Mawr Commencement Address (1986)</em>.
 Bryn Mawr College.</p>
+<br />
 <p>Viegas, Jennifer. “Female Sex Organs the Focus of Oldest Known Cave
 Art.” <em>NBC News</em>, 2012,
 https://www.nbcnews.com/id/wbna47418532.</p>
+<br />
 <p>Zachary Durec. <em>Shaping Imaginations: Plato’s Republic on Stories
 and Storytelling</em>. 2019. DePaul,
-https://academics.depaul.edu/honors/curriculum/archives/Documents/2019%20Honors%20Senior%20Theses/Durek,%20Shaping%20Imaginations,%20Plato’s%20Republic%20on%20Stories%20and%20Storytelling.pdf.</p>
-	
+https://academics.depaul.edu/honors/curriculum/archives/Documents/
+2019%20Honors%20Senior%20Theses/Durek,%20Shaping%20Imaginations,%20Plato’s%20Republic%20on%20Stories%20and%20Storytelling.pdf.</p>
+</span>
 </div>
 
 
