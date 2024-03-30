@@ -21,8 +21,11 @@ $(document).ready(function() {
             jumber.css('display', 'none');
             isSticky = false;
         }
+        
     });
 
+    
+  
     function toggleImage(event) {
         var btn = event.currentTarget;
         var imageId = btn.dataset.imageId;
@@ -47,8 +50,15 @@ $(document).ready(function() {
         });
     });
 
-//     window.addEventListener("DOMContentLoaded", () => {
-//         const header = new Headroom(document.querySelector("#main-nav"));
-//         header.init();
-// });
+    const sidenoteToggles = document.querySelectorAll('.sidenote-number');
+
+function toggleSidenote() {
+  const checkbox = this.previousElementSibling;
+  checkbox.checked = !checkbox.checked;
+}
+
+sidenoteToggles.forEach(toggle => {
+  toggle.addEventListener('click', toggleSidenote);
+});
+
 })
