@@ -565,12 +565,18 @@ em{
 }
 
 
-#image-4 {
+#image-4{
   margin-top: -50%;
 }
 
-#image-3{
+#image-3,
+#image-20{
   margin-top: -30%;
+}
+
+#image-21,
+#image-22{
+  margin-top:-25%;
 }
 
 #image-1{
@@ -885,7 +891,9 @@ em{
   #image-1,
   #image-5,
   #image-6,
-  #image-20{
+  #image-20,
+  #image-21,
+  #image-22{
     margin-top: 2.5vh;
   }
 
