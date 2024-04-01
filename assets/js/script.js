@@ -50,15 +50,15 @@ $(document).ready(function() {
         });
     });
 
-    const sidenoteToggles = document.querySelectorAll('.sidenote-number');
+    const sidenoteLabels = document.querySelectorAll('.sidenote-number');
 
-function toggleSidenote() {
-  const checkbox = this.previousElementSibling;
-  checkbox.checked = !checkbox.checked;
-}
-
-sidenoteToggles.forEach(toggle => {
-  toggle.addEventListener('click', toggleSidenote);
+sidenoteLabels.forEach(label => {
+    label.addEventListener('click', () => {
+        const sidenote = label.nextElementSibling;
+        sidenote.classList.toggle('active');
+    });
 });
+
+
 
 })

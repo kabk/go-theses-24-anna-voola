@@ -283,9 +283,12 @@ a:hover {
 
 
 #start {
+  padding-top: 38px;
   hyphens: auto;
   text-align: justify;
   text-justify: inter-word;
+  margin-bottom:25%;
+  border-bottom: 5px solid black;
 }
 
 #start > p {
@@ -408,15 +411,7 @@ a:hover {
   margin: 0;
 }
 
-#start p, 
-#conclusion p  {
-      text-indent:2em;
-}
 
-#start p:first-child,
-#conclusion p:first-child {
-  text-indent:0em;
-}
 
 
 
@@ -443,18 +438,22 @@ ol, ul{
 }
 
 
-.sidenote-wrapper{
+/* .sidenote-wrapper{
 position: relative;
-}
+} */
 
   
 p > .sidenote-wrapper {
 text-indent: 0;
 }
-  
-.sidenote,
-.marginnote {
-  text-align: justify;
+
+.sidenote-wrapper .sidenote{
+  display: none;
+}
+
+.sidenote-wrapper .sidenote.active{
+  display:block;
+  text-align: left;
   text-justify: inter-word;
   font-family: 'helvetica_neuemedium';
   clear: right;
@@ -463,12 +462,12 @@ text-indent: 0;
   margin-right: -45%;
   float: right;
   width: 20vw;
+}
 
-  }
+.sidenote-wrapper .sidenote-number{
+  cursor:pointer;
+}
 
-  .sidenote-checkbox:checked + .sidenote {
-    display: block;
-  }
 
 .sidenote-number {
   counter-increment: sidenote-counter;
@@ -511,14 +510,13 @@ text-indent: 0;
 }
 
 
-
 input.margin-toggle {
   display: none;
 }
 
 label.margin-toggle:not(.sidenote-number) {
   display: none;
-} */
+} 
 
 
 
@@ -565,6 +563,29 @@ em{
   color:rgb(221, 221, 221);
   background-color: rgb(3, 115, 252);
 }
+
+
+#image-4 {
+  margin-top: -50%;
+}
+
+#image-3{
+  margin-top: -30%;
+}
+
+#image-1{
+  margin-top: -35%;
+}
+
+#image-5{
+  margin-top: -14%;
+}
+
+
+#image-6{
+  margin-top: -20%;
+}
+
 
 
 
@@ -781,12 +802,14 @@ em{
     font-size: 1.1rem;
     color: rgb(0, 0, 0);
   }
-
-
-  .sidenote,
-  .marginnote {
+  
+  .sidenote-wrapper .sidenote{
+    display: none;
+  }
+  
+  .sidenote-wrapper .sidenote.active {
     border-top: solid 1px black;
-    text-align: justify;
+    text-align: left;
     text-justify: inter-word;
     font-family: 'helvetica_neuemedium';
     clear: right;
@@ -796,8 +819,6 @@ em{
     float: right;
     width: 100%;
     padding: 5px;
-    display: none;
-  
   }
 
   .sidenote-number:after,
@@ -859,7 +880,15 @@ em{
   }
 
 
-  
+  #image-4,
+  #image-3,
+  #image-1,
+  #image-5,
+  #image-6,
+  #image-20{
+    margin-top: 2.5vh;
+  }
+
 
   
   
